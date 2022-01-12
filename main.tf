@@ -52,8 +52,8 @@ resource "azurerm_hdinsight_kafka_cluster" "ntpoc" {
   }
 
   storage_account {
-    storage_container_id = ntpoc
-    storage_account_key  = azurerm_storage_account.ntpoc.primary_access_key
+    storage_container_id = nthdistorage 
+    storage_account_key  = nthdistorage.primary_access_key
     is_default           = true
   }
 
