@@ -1,3 +1,9 @@
+
+provider "azurerm" {
+  features {
+    
+  }
+}
 resource "azurerm_resource_group" "ntpoc" {
   name     = "ntpoc-resources"
   location = "South India"
