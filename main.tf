@@ -28,11 +28,7 @@ resource "azurerm_hdinsight_kafka_cluster" "ntpoc" {
     kafka = "2.1"
   }
 
-  gateway {
-    enabled  = true
-    username = "acctestusrgw"
-    password = "TerrAform123!"
-  }
+
 
   storage_account {
     storage_container_id = azurerm_storage_container.ntpoc.id
