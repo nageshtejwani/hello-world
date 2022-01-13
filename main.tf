@@ -11,10 +11,10 @@ resource "azurerm_resource_group" "ntpoc" {
   location = "South India"
 }
 
-service_principal {
-  client_id = var.ARM_CLIENT_ID
-  client_secret = var.ARM_CLIENT_SECRET
-}
+# service_principal {
+#   client_id = var.ARM_CLIENT_ID
+#   client_secret = var.ARM_CLIENT_SECRET
+# }
 
 resource "azurerm_storage_account" "ntpoc" {
   name                     = "hdinsightstor"
