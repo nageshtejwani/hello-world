@@ -17,7 +17,7 @@ resource "azurerm_resource_group" "ntpoc" {
 # }
 
 resource "azurerm_storage_account" "ntpoc" {
-  name                     = "hdinsightstor"
+  name                     = "nthdinsightstor"
   resource_group_name      = azurerm_resource_group.ntpoc.name
   location                 = azurerm_resource_group.ntpoc.location
   account_tier             = "Standard"
@@ -25,7 +25,7 @@ resource "azurerm_storage_account" "ntpoc" {
 }
 
 resource "azurerm_storage_container" "ntpoc" {
-  name                  = "hdinsight"
+  name                  = "nthdinsight"
   storage_account_name  = azurerm_storage_account.ntpoc.name
   container_access_type = "private"
 }
