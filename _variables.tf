@@ -12,3 +12,11 @@ variable "ARM_CLIENT_SECRET" {
     type =string
   
 }
+
+
+variable "ARM_SUBSCRIPTION_ID" {
+
+    description = "SUBSCRIPTION_ID  of the cloud "
+    type =string
+  
+}
