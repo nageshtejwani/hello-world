@@ -6,7 +6,7 @@ variable "ARM_CLIENT_ID" {
 }
 
 
-variable "ARM_CLIENT_SECRET " {
+variable "ARM_CLIENT_SECRET" {
 
     description = "Secret of the service AKS-managed service principal"
     type =string
