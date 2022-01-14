@@ -60,7 +60,7 @@ resource "azurerm_hdinsight_kafka_cluster" "ntpoc" {
     }
 
     worker_node {
-      vm_size                  = "Standard_A5"
+      vm_size                  = "A5"
       username                 = "acctestusrvm"
       password                 = "AccTestvdSC4daf986!"
       number_of_disks_per_node = 3
