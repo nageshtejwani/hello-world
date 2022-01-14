@@ -54,13 +54,13 @@ resource "azurerm_hdinsight_kafka_cluster" "ntpoc" {
 
   roles {
     head_node {
-      vm_size  = "Standard_D3_V2"
+      vm_size  = "Standard_E4_V3"
       username = "acctestusrvm"
       password = "AccTestvdSC4daf986!"
     }
 
     worker_node {
-      vm_size                  = "Standard_D3_V2"
+      vm_size                  = "Standard_A5"
       username                 = "acctestusrvm"
       password                 = "AccTestvdSC4daf986!"
       number_of_disks_per_node = 3
@@ -68,7 +68,7 @@ resource "azurerm_hdinsight_kafka_cluster" "ntpoc" {
     }
 
     zookeeper_node {
-      vm_size  = "Standard_D3_V2"
+      vm_size  = "Standard_A4_V2"
       username = "acctestusrvm"
       password = "AccTestvdSC4daf986!"
     }
